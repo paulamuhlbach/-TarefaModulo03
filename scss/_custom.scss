@@ -1,0 +1,20 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-responsive-font-sizes: true;
+
+$body-color: #333;
+$body-bg: #daeffb;
+$border-radius: .4rem;
+
+$theme-colors: (
+  "primary": #4d88a9,
+  "secondary": #6f6c6c,
+  "success": #45af76,
+  "danger": #c22437,
+  "warning": #fbb751,
+  "info": #86caf0,
+  "light": #daeffb,
+  "dark": #254d64
+) !default;
