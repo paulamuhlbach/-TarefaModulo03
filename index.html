@@ -7,6 +7,10 @@
     <title>Tarefa Módulo 03</title>
   </head>
   <body>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
       <header>
         <nav class="navbar navbar-expand-lg navbar-info bg-info d-flex justify-content-between">
           <div><a class="navbar-brand" href="#"><img src="assets/imgs/unisinos-logo.svg" height="40" alt="Logo Unisinos" title="Unisinos" class="nav-item"></a></div>
@@ -17,65 +21,34 @@
 
           <div class="container">
             <h2 class="text-info">Lista de Tarefas</h2>
-            <textarea class="texto">
-              1234 - Novo Portal XPTO, HU 2235 - Desenvolvimento do Mapa do Site,Backlog;
-              1234 - Novo Portal XPTO,HU 2235 - HU 2198 -  Desenvolver back-end para crud de criação de páginas,Backlog;
-              1241 - Ordenador de Serviços,HU 2322 - Desenvolvimento Backend,Teste;
-              1241 - Ordenador de Serviços,HU 2235 - Documentação,Backlog;
-              1234 - Novo Portal XPTO,HU 2235 - Desenvolver Front-end para gerenciamento de páginas no menu,Em andamento;
-              1235 - Novo Portal XPTO, HU 2235 - Desenvolvimento do Mapa do Site,Backlog;
-              1235 - Novo Portal XPTO,HU 2235 - HU 2198 -  Desenvolver back-end para crud de criação de páginas,Sprint;
-              1241 - Ordenador de Serviços,HU 2322 - Desenvolvimento Backend,Teste;
-              1243 - Ordenador de Serviços,HU 2235 - Documentação,Não homologada;
-              1234 - Novo Portal XPTO,HU 2235 - Desenvolver Front-end para gerenciamento de páginas no menu,Em andamento
-            </textarea>
+            <textarea class="texto" id="texto">
+              1,1234 - Novo Portal XPTO, HU 2235 - Desenvolvimento do Mapa do Site,Backlog;
+              2,1234 - Novo Portal XPTO,HU 2235 - HU 2198 -  Desenvolver back-end para crud de criação de páginas,Backlog;
+              3,1241 - Ordenador de Serviços,HU 2322 - Desenvolvimento Backend,Teste;
+              4,1241 - Ordenador de Serviços,HU 2235 - Documentação,Homologada;
+              5,1234 - Novo Portal XPTO,HU 2235 - Desenvolver Front-end para gerenciamento de páginas no menu,Em andamento;
+              6,1235 - Novo Portal XPTO, HU 2235 - Desenvolvimento do Mapa do Site,Backlog;
+              7,1235 - Novo Portal XPTO,HU 2235 - HU 2198 -  Desenvolver back-end para crud de criação de páginas,Sprint;
+              8,1241 - Ordenador de Serviços,HU 2322 - Desenvolvimento Backend,Teste;
+              9,1243 - Ordenador de Serviços,HU 2235 - Documentação,Não homologada;
+              10,1234 - Novo Portal XPTO,HU 2235 - Desenvolver Front-end para gerenciamento de páginas no menu,Em andamento</textarea>
 
-            <table class="table table-striped " >
-              <thead>
+            <button type="button" class="btn btn-outline-info" onclick="criarTabela()" id="btn-tabela">Info</button>
+
+            <table class="table table-hover" id="tarefas">
+              <thead class="table-info">
                 <tr>
-                <th scope="col" class="rounded-top">#</th>
-                <th scope="col" class="rounded-top">Primeiro</th>
-                <th scope="col" class="rounded-top">Último</th>
-                <th scope="col" class="rounded-top">Nickname</th>
+                <th scope="col" >nº</th>
+                <th scope="col">Projeto</th>
+                <th scope="col">Tarefa</th>
+                <th scope="col">Situação</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                <th scope="row">1</th>
-                <td class="border border-info">Mark</td>
-                <td class="border border-info">Otto</td>
-                <td class="border border-info">@mdo</td>
-                </tr>
-                <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                </tr>
-                <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                </tr>
-              </tbody>
+
               </table>
           </div>
-          <p class="text-primary">.text-primary</p>
-          <p class="text-secondary">.text-secondary</p>
-          <p class="text-success">.text-success</p>
-          <p class="text-danger">.text-danger</p>
-          <p class="text-warning">.text-warning</p>
-          <p class="text-info">.text-info</p>
-          <p class="text-light bg-dark">.text-light</p>
-          <p class="text-dark">.text-dark</p>
-          <p class="text-body">.text-body</p>
-          <p class="text-muted">.text-muted</p>
-          <p class="text-white bg-dark">.text-white</p>
-          <p class="text-black-50">.text-black-50</p>
-          <p class="text-white-50 bg-dark">.text-white-50</p>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
+
+          <script src="assets/js/tabela.js"></script>
   </body>
 </html>
