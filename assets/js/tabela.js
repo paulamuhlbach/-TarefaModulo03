@@ -6,9 +6,14 @@ const strings = texto[0].value.split(';');
     function criarTabela() {
         const itens = [];
         const tab = $('#tarefas')[0];
+        const thead = $('<thead class="table-info"><tr><th scope="col">nº</th><th scope="col">Projeto</th><th scope="col">Tarefa</th><th scope="col">Situação</th></tr></thead>')[0];
+
+        tab.appendChild(thead);
+
         for (let index = 0; index < strings.length; index++) {
             const element = strings[index];
             const campos = element.split(',');
+
 
             let badgeTypeValue = campos[3];
                 if(campos[3] === 'Em andamento'){
@@ -36,14 +41,4 @@ const strings = texto[0].value.split(';');
 
         }
 
-        $(button).on("click", function(){
-          $(this).hide();
-        });
-
-
-
   }
-
-
-
-

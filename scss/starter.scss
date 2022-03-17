@@ -1,16 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "custom";
-@import "icon-list";
 
 body {
   padding: 0;
 }
 
-// Style Bootstrap icons
-.bi {
-  fill: currentColor;
-}
-
 .texto{
   display: none;
 }
+
+
+
